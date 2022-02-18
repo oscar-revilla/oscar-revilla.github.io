@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>m12 web</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://unpkg.com/jquery.terminal/js/jquery.terminal.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/jquery.terminal/css/jquery.terminal.min.css"/>
+<body>
+
+<script>
+    $('body').terminal({
+        test: function() {
+            const test = $ ('<a href="test.html">test</a>')
+            this.echo(test);
+
+        },
+        video: function(w,h) {
+            const img = $('<iframe width=' + w + ' height=' + h + ' src="https://www.youtube.com/embed/VDpCFcUSbWY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>');
+            img.on('load', this.resume);
+            this.pause();
+            this.echo(img);
+            this.echo('test');
+        },
+        m1: function(x) {
+            const m1 = $('<pre>M1: Muntatge i manteniment d’equips\n' +
+                '\n' +
+                'Durada: 198 hores\n' +
+                'Hores de lliure disposició: 33 hores\n' +
+                'UF 1: Electricitat a l’ordinador. 25 hores\n' +
+                'UF 2: Components d’un equip microinformàtic. 28 hores\n' +
+                'UF 3: Muntatge d’un equip microinformàtic. 28 hores\n' +
+                'UF 4: Noves tendències de muntatge. 28 hores\n' +
+                'UF 5: Manteniment d’equips microinformàtics. 28 hores\n' +
+                'UF 6: Instal·lació de programari. 28 hores\n</pre>')
+            const uf1 = $('<pre>UF 1: Electricitat a l’ordinador\n' +
+                '\n' +
+                'Durada: 25 hores\n' +
+                '\n' +
+                'Continguts\n' +
+                '\n' +
+                '    Mesurament de paràmetres elèctrics:\n' +
+                '\n' +
+                '1.1 Tipus de senyals.\n' +
+                '1.2 Selecció de la magnitud i el rang de mesura, i connexió de l’aparell.\n' +
+                '1.3 Valors tipus.\n' +
+                '1.4 Blocs d’una font d’alimentació.\n' +
+                '1.5 Enumeració de les tensions proporcionades per una FA típica.\n' +
+                '1.6 Mesurament de les tensions en FA típiques.\n' +
+                '1.7 Sistemes d’alimentació interromputs.\n' +
+                '1.8 Mesurament de senyals d’un SAI.\n' +
+                '1.9 Prevenció de riscos laborals en els processos de muntatge i manteniment. Equips de protecció individual.\n' +
+                '1.10 Determinació de les mesures de prevenció de riscos laborals.\n' +
+                '1.11 Compliment de la normativa de protecció ambiental.\n' +
+                '1.12 Valoració de l’ordre i la netedat al treball.\n' +
+                '\n' +
+                '    Compliment de les normes de prevenció de riscos laborals i protecció ambiental:\n' +
+                '\n' +
+                '2.1 Compliment de la normativa de prevenció de riscos laborals.\n' +
+                '2.2 Identificació de les causes més freqüents d’accidents.\n' +
+                '2.3 Prevenció de riscos laborals en els processos de muntatge i manteniment. Equips de protecció individual.\n' +
+                '2.4 Determinació de les mesures de prevenció de riscos laborals.\n' +
+                '2.5 Compliment de la normativa de protecció ambiental.\n' +
+                '2.6 Valoració de l’ordre i la netedat al treball.</pre>')
+            const uf2 = $('<pre>UF 2: components d’un equip microinformàtic\n' +
+                '\n' +
+                'Durada: 28 hores\n' +
+                '\n' +
+                'Continguts\n' +
+                '\n' +
+                '    Identificació dels blocs funcionals d’un sistema microinformàtic i funcionalitat dels components de les\n' +
+                '    plaques base:\n' +
+                '\n' +
+                '1.1 Principals funcions de cada bloc.\n' +
+                '1.2 Reconeixement de l’arquitectura de busos.\n' +
+                '1.3 Característiques dels microprocessadors.\n' +
+                '1.4 Control de temperatures en un sistema microinformàtic.\n' +
+                '1.5 El programa de configuració de la placa base. Programari base i d’aplicació.\n' +
+                '1.6 Dispositius integrats a placa.\n' +
+                '1.7 Identificació i manipulació dels components bàsics. Tipus de memòria.\n' +
+                '1.8 Característiques i funcions de cada tipus.\n' +
+                '1.9 Anàlisi del mercat de components d’equips microinformàtics.\n' +
+                '1.10 L’adaptador gràfic i el monitor d’un equip microinformàtic.\n' +
+                '1.11 Connectivitat LAN i WAN d’un sistema microinformàtic.\n' +
+                '1.12 Controladors de dispositius.</pre>')
+            const uf3 = $('<pre>UF 3: muntatge d’un equip microinformàtic\n' +
+                '\n' +
+                'Durada: 28 hores\n' +
+                '\n' +
+                'Continguts\n' +
+                '\n' +
+                '    Anàlisi del mercat de components d’equips microinformàtics i acoblat d’equips microinformàtics:\n' +
+                '\n' +
+                '1.1 Eines i estris.\n' +
+                '1.2 Interpretació de la documentació tècnica.\n' +
+                '1.3 El xassís. Fixació dels mòduls de memòria RAM. Fixació i connexió de les unitats de disc fix. Fixació i\n' +
+                'connexió de la resta d’adaptadors i components. Fixació i connexió de les unitats de lectura/enregistrament en\n' +
+                'suports de memòria auxiliar.\n' +
+                '1.4 Seqüència de muntatge d’un ordinador. Precaucions i advertències de seguretat. Encadellat del\n' +
+                'processador. Refrigeració del processador.\n' +
+                '1.5 La memòria RAM. Discos fixos i controladors de disc. Suports de memòria auxiliar i unitats de\n' +
+                'lectura/enregistrament.\n' +
+                '1.6 Configuració de paràmetres bàsics segons la placa base. Components OEM i components “retail”.\n' +
+                '1.7 Utilitats de revisió i diagnòstic. Controladors de dispositius.\n' +
+                '1.8 Realització d’un informe de muntatge\n</pre>')
+            const uf4 = $('<pre>UF 4: noves tendències de muntatge\n' +
+                '\n' +
+                'Durada: 28 hores\n' +
+                '\n' +
+                'Continguts\n' +
+                '\n' +
+                '    Aplicacions de noves tendències en equips informàtics:\n' +
+                '\n' +
+                '1.1 Reconeixement de novetats per al xassís-placa base.\n' +
+                '1.2 Ús de barebones per al muntatge d’equips.\n' +
+                '1.3 Descripció de les característiques dels ordinadors d’entreteniment multimèdia.\n' +
+                '1.4 Descripció de les característiques d’ordinadors d’aplicacions específiques.\n' +
+                '1.5 Informàtica mòbil.\n' +
+                '1.6 Avaluació de la presència de la personalització de PC (modding).\n' +
+                '1.7 Documentar les noves tendències, elaborar guies d’usuari per a l’aplicació d’aquestes noves tendències.</pre>')
+            const uf5 = $('<pre>UF 5: manteniment d’equips microinformàtics\n' +
+                '\n' +
+                'Durada: 28 hores\n' +
+                '\n' +
+                'Continguts\n' +
+                '\n' +
+                '    Manteniment d’equips microinformàtics i perifèrics:\n' +
+                '\n' +
+                '1.1 Senyals d’advertència, lluminosos i acústics.\n' +
+                '1.2 Detecció d’avaries per sobreescalfament.\n' +
+                '1.3 Detecció d’avaries en un equip microinformàtic. Errors comuns.\n' +
+                '1.4 Impressores.\n' +
+                '1.5 Substitució de components deteriorats.\n' +
+                '1.6 Incompatibilitats.\n' +
+                '1.7 Substitució de materials consumibles en impressores.\n' +
+                '1.8 Perifèrics d’entrada.\n' +
+                '1.9 Ampliacions de maquinari.\n' +
+                '1.10 Elaboració d’informes d’avaria.\n' +
+                '1.11 Utilització d’una aplicació per a la captura d’imatges i/o vídeos digitals.\n' +
+                '1.12 Utilització d’una aplicació per a altres perifèrics multimèdia.\n' +
+                '1.13 Tècniques de manteniment preventiu.</pre>')
+            const uf6 = $('<pre>UF 6: instal·lació de programari\n' +
+                '\n' +
+                'Durada: 28 hores\n' +
+                '\n' +
+                'Continguts\n' +
+                '\n' +
+                '    Instal·lació de programari:\n' +
+                '\n' +
+                '1.1 Diferenciació entre instal·lació i preinstal·lació de programari.\n' +
+                '1.2 Opcions d’arrencada d’un equip.\n' +
+                '1.3 Inicialització d’equips des de diferents suports.\n' +
+                '1.4 Restauració d’imatges. Realització i restauració d’una imatge des de diferents suports de memòria auxiliar.\n' +
+                '1.5 Utilitats per a la creació d’imatges de partició/disc.\n' +
+                '1.6 Realització de documentació del procés i guies d’atenció a l’usuari.\n</pre>')
+            const sp = $('<pre> </pre>')
+            const sp1 = $('<pre> </pre>')
+            const sp2 = $('<pre> </pre>')
+            const sp3 = $('<pre> </pre>')
+            const sp4 = $('<pre> </pre>')
+            const sp5 = $('<pre> </pre>')
+            const sp6 = $('<pre> </pre>')
+
+            if (x == 'uf1') {
+                this.echo(uf1);
+            }
+            if (x == 'uf2') {
+                this.echo(uf2);
+            }
+            if (x == 'uf3') {
+                this.echo(uf3);
+            }
+            if (x == 'uf4') {
+                this.echo(uf4);
+            }
+            if (x == 'uf5') {
+                this.echo(uf5);
+            }
+            if (x == 'uf6') {
+                this.echo(uf6);
+            }
+            if (x == 'tree') {
+                this.echo(sp);
+                this.echo(m1);
+                this.echo(sp1);
+                this.echo(uf1);
+                this.echo(sp2);
+                this.echo(uf2);
+                this.echo(sp3);
+                this.echo(uf3);
+                this.echo(sp4);
+                this.echo(uf4);
+                this.echo(sp5);
+                this.echo(uf5);
+                this.echo(sp6);
+                this.echo(uf6);
+            }
+            if (x == null) {
+                this.echo(m1);
+            }
+
+        },
+        m2: function(x) {
+            const m2 = $('<pre>M2: Sistemes operatius monolloc\n' +
+                '\n' +
+                'Durada: 132 hores\n' +
+                'Hores de lliure disposició: 33 hores\n' +
+                'UF 1: introducció als sistemes operatius. 33 hores\n' +
+                'UF 2: sistemes operatius propietaris. 33 hores\n' +
+                'UF 3: sistemes operatius lliures. 33 hores\n</pre>')
+            const uf1 = $('<pre>UF 1: introducció als sistemes operatius\n' +
+                '\n' +
+                'Durada: 33 hores\n' +
+                '\n' +
+                'Continguts\n' +
+                '\n' +
+                '    Caracterització dels sistemes operatius, tipus i aplicacions:\n' +
+                '\n' +
+                '1.1 El sistema informàtic: components físics i lògics. El programari base.\n' +
+                '1.2 Codificació de la informació en diferents sistemes de representació.\n' +
+                '1.3 Concepte de sistema operatiu. Elements i estructura.\n' +
+                '1.4 Funcions del sistema operatiu. Recursos.\n' +
+                '1.5 Arquitectura del sistema operatiu.\n' +
+                '1.6 Evolució històrica. Sistemes operatius actuals.\n' +
+                '1.7 Classificació dels sistemes operatius.\n' +
+                '1.8 Gestió d’arxius: sistemes d’arxius, arxiu, directori, atributs, permisos.\n' +
+                '1.9 Gestió de la memòria.\n' +
+                '1.10 Gestió de processos. Estats dels processos. Prioritat i planificació.\n' +
+                '1.11 Gestió d’entrada/sortida.\n' +
+                '1.12 Sistemes transaccionals.\n' +
+                '\n' +
+                '2. Configuració de màquines virtuals:\n' +
+                '\n' +
+                '2.1 Descripció de màquina real i màquina virtual.\n' +
+                '2.2 Virtualització i màquina virtual: avantatges i inconvenients.\n' +
+                '2.3 Programari (propietari i lliure) per a la creació de màquines virtuals: instal·lació.\n' +
+                '2.4 Creació de màquines virtuals per a sistemes operatius lliures i propietaris.\n' +
+                '2.5 Configuració i utilització de màquines virtuals.\n' +
+                '2.6 Relació amb el sistema operatiu amfitrió.\n' +
+                '2.7 Realització de proves de rendiment del sistema.\n' +
+                '2.8 Comprovació del funcionament correcte de les instal·lacions i configuracions realitzades.\n' +
+                '2.9 Documentació del procés d’instal·lació i de les incidències aparegudes amb les seves solucions.\n' +
+                '2.10 Interpretació de documentació tècnica.</pre>')
+            const uf2 = $('<pre>UF 2: Introducció als sistemes operatius. 33 hores\n' +
+                '\n' +
+                'Identifica i descriu els elements funcionals d\'un sistema informàtic.\n' +
+                'Codifica i relaciona la informació amb els diferents sistemes de representació.\n' +
+                'Defineix el concepte de sistema operatiu, els seus elements i la seva estructura.\n' +
+                'Analitza les funcions del sistema operatiu.\n' +
+                'Descriu l\'arquitectura del sistema operatiu.\n' +
+                'Coneix l\'evolució dels sistemes operatius fins als nostres dies.\n' +
+                'Classifica els sistemes operatius.\n' +
+                'Descriu l\'estructura i l\'organització dels diferents sistemes de fitxers.\n' +
+                'Identificar processos, estats i sistemes bàsics de planificació.\n' +
+                'Confirma la utilitat dels sistemes transaccionals i les seves repercussions a l\'hora de seleccionar un sistema d\'arxius.</pre>')
+            const uf3 = $('<pre></pre>')
+            const sp = $('<pre> </pre>')
+            const sp1 = $('<pre> </pre>')
+            const sp2 = $('<pre> </pre>')
+            const sp3 = $('<pre> </pre>')
+            const sp4 = $('<pre> </pre>')
+            const sp5 = $('<pre> </pre>')
+            const sp6 = $('<pre> </pre>')
+
+            if (x == 'uf1') {
+                this.echo(uf1);
+            }
+            if (x == 'uf2') {
+                this.echo(uf2);
+            }
+            if (x == 'uf3') {
+                this.echo(uf3);
+            }
+            if (x == 'uf3') {
+                this.echo(uf3);
+            }
+            if (x == 'tree') {
+                this.echo(sp);
+                this.echo(m2);
+                this.echo(sp1);
+                this.echo(uf1);
+                this.echo(sp2);
+                this.echo(uf2);
+            }
+            if (x == null) {
+                this.echo(m2);
+            }
+        },
+        m3: function(x) {
+            const m3 = $('<pre>M3: Aplicacions ofimàtiques\n' +
+                '\n' +
+                'Durada: 165 hores\n' +
+                'Hores de lliure disposició: No se n’assignen\n' +
+                'UF 1: Aplicacions ofimàtiques i atenció a l’usuari. 20 hores\n' +
+                'UF 2: El correu i l’agenda electrònica. 20 hores\n' +
+                'UF 3: Processadors de text. 30 hores\n' +
+                'UF 4: Fulls de càlcul. 30 hores\n' +
+                'UF 5: Bases de dades. 35 hores\n' +
+                'UF 6: Imatge i vídeo – presentacions. 30 hores\n</pre>')
+            const uf1 = $('<pre>UF 1: Atenció al client i aplicacions ofimàtiques 20 hores\n' +
+                '\n' +
+                'Proposar solucions de programari.\n' +
+                'Respectar les llicències de programari.\n' +
+                'Actualitzar aplicacions.\n' +
+                'Identifica i estableix les etapes del procés d\'instal·lació.\n' +
+                'Respectar les especificacions tècniques del procés d\'instal·lació.\n' +
+                'Traieu i/o afegiu components d\'instal·lació al vostre equip.\n' +
+                'Configurar aplicacions segons criteris establerts.\n' +
+                'Problemes de documentació.\n' +
+                'Solucionar problemes d\'instal·lació o integració amb el sistema informàtic.</pre>')
+            const uf2 = $('<pre>UF 2: Calendari i aplicacions de correu electrònic. 20 hores\n' +
+                '\n' +
+                'Descriu els elements que conformen un correu electrònic, necessitats bàsiques de gestió de correu.\n' +
+                'Configura diferents tipus de comptes de correu electrònic.\n' +
+                'Classifica i arxiva missatges de correu.\n' +
+                'Funciona amb llibreta d\'adreces.\n' +
+                'Funciona amb totes les opcions de gestió de correu electrònic (etiquetes, filtres, carpetes, entre d\'altres).\n' +
+                'Analitza les necessitats bàsiques de l\'agenda electrònica, configuració.\n' +
+                'Connecta i sincronitza agendes d\'equips informàtics amb dispositius mòbils.\n' +
+                'Utilitza opcions de planificació electrònica.</pre>')
+            const uf3 = $('<pre>UF 3: Processadors de text 30 hores\n' +
+                '\n' +
+                'Personalitza les opcions del programari i la barra d\'eines.\n' +
+                'Plantilles de disseny.\n' +
+                'Utilitza aplicacions i perifèrics per introduir text i imatges.\n' +
+                'Importa i exporta documents creats amb altres aplicacions i en altres formats.\n' +
+                'Crea i utilitza macros en la creació de documents.\n' +
+                'Elabora manuals específics</pre>')
+            const uf4 = $('<pre>UF 4: Full de càlcul 30 hores\n' +
+                '\n' +
+                'Personalitza el programari i les opcions de la barra d\'eines.\n' +
+                'Utilitza diferents tipus de dades i referències per a cel·les, intervals, fulls i llibres.\n' +
+                'Aplica fórmules i funcions.\n' +
+                'Genera i modifica gràfics de diferents tipus.\n' +
+                'Utilitzeu macros per crear documents i plantilles.\n' +
+                'Importa i exporta fulls de càlcul creats amb altres aplicacions i en altres formats.\n' +
+                'Utilitza el full de càlcul com a base de dades: formularis, creació de llistes, filtratge, protecció de dades i ordenació.\n' +
+                'Utilitza aplicacions i perifèrics per introduir textos, números, codis i imatges.</pre>')
+            const uf5 = $('<pre>UF 5: Bases de dades 35 hores\n' +
+                '\n' +
+                'Identifica elements de bases de dades relacionals.\n' +
+                'Crea bases de dades d\'oficina.\n' +
+                'Utilitza taules de bases de dades (inserció, modificació i eliminació de registres).\n' +
+                'Utilitza els assistents en la creació de consultes.\n' +
+                'Utilitza assistents en la creació de formularis.\n' +
+                'Utilitza els assistents en els informes.\n' +
+                'Realitza la cerca i filtra la informació emmagatzemada.\n' +
+                'Crea i utilitza macros</pre>')
+            const uf6 = $('<pre>UF 6: Edició d\'imatge i vídeo 30 hores\n' +
+                '\n' +
+                'Analitza els diferents formats d\'imatge.\n' +
+                'Adquisició d\'imatges perifèriques.\n' +
+                'Funciona amb imatges en diferents resolucions, segons la seva finalitat.\n' +
+                'Utilitza eines per a l\'edició d\'imatges digitals.\n' +
+                'Importa i exporta imatges en diferents formats</pre>')
+            const sp = $('<pre> </pre>')
+            const sp1 = $('<pre> </pre>')
+            const sp2 = $('<pre> </pre>')
+            const sp3 = $('<pre> </pre>')
+            const sp4 = $('<pre> </pre>')
+            const sp5 = $('<pre> </pre>')
+            const sp6 = $('<pre> </pre>')
+
+            if (x == 'uf1') {
+                this.echo(uf1);
+            }
+            if (x == 'uf2') {
+                this.echo(uf2);
+            }
+            if (x == 'uf3') {
+                this.echo(uf3);
+            }
+            if (x == 'uf4') {
+                this.echo(uf4);
+            }
+            if (x == 'uf5') {
+                this.echo(uf5);
+            }
+            if (x == 'uf6') {
+                this.echo(uf6);
+            }
+            if (x == 'tree') {
+                this.echo(sp);
+                this.echo(m3);
+                this.echo(sp1);
+                this.echo(uf1);
+                this.echo(sp2);
+                this.echo(uf2);
+                this.echo(sp3);
+                this.echo(uf3);
+                this.echo(sp4);
+                this.echo(uf4);
+                this.echo(sp5);
+                this.echo(uf5);
+                this.echo(sp6);
+                this.echo(uf6);
+            }
+            if (x == null) {
+                this.echo(m3);
+            }
+        },
+        m5: function(x) {
+            const m5 = $('<pre>M5: Xarxes locals\n' +
+                '\n' +
+                'Durada: 165 hores\n' +
+                'Hores de lliure disposició: No se n’assignen\n' +
+                'UF 1: Introducció a les xarxes locals. 66 hores\n' +
+                'UF 2: Configuració de commutadors i encaminadors. 66 hores\n' +
+                'UF 3: Resolució d’incidències en xarxes locals. 33 hores\n</pre>')
+            const uf1 = $('<pre>UF 1: Introducció a les xarxes locals. 66 hores\n' +
+                '\n' +
+                'Descriu els principis de funcionament de les xarxes locals.\n' +
+                'Identifica els diferents tipus de xarxes tenint en compte les arquitectures i tecnologies existents.\n' +
+                'Descriu els elements de la xarxa local i la seva funció, tenint en compte les característiques i\n' +
+                'Característiques associades.\n' +
+                'Identifica i classifica els mitjans de transmissió.\n' +
+                'Utilitzar aplicacions per representar el mapa físic i lògic de la xarxa local.\n' +
+                'Reconeix diferents topologies de xarxa.\n' +
+                'Identifica estructures alternatives.\n' +
+                'Identifica les normatives legals i tècniques que afecten la implantació de xarxes locals a partir de\n' +
+                'procediments donats.\n' +
+                'Interpretar la documentació tècnica associada als elements de comunicació, encara que estigui editada a\n' +
+                'Llengua estrangera d\'ús més freqüent en el sector, utilitzant-la com a ajuda.</pre>')
+            const uf2 = $('<pre>UF 2: Configuració del commutador i del router 66 hores\n' +
+                '\n' +
+                'Enumera i explica les característiques dels protocols que es configuren en una xarxa local tenint en compte la tecnologia i els estàndards utilitzats.\n' +
+                'Criteris d\'avaluació\n' +
+                'Explicar el sistema d\'adreces dels nodes utilitzats a la xarxa local basat en tecnologies de\n' +
+                'xarxa utilitzada.\n' +
+                'Enumera i explica les característiques dels protocols que es configuren en una xarxa local tenint en compte\n' +
+                'tecnologia i estàndards utilitzats.\n' +
+                'Instal·la xarxes locals sense fil, descrivint-ne els beneficis i aplicant tècniques de muntatge</pre>')
+            const uf3 = $('<pre>UF 3: Gestió de problemes en xarxes locals. 33 hores\n' +
+                '\n' +
+                'Explica les etapes d\'un procés de verificació de connectivitat en una xarxa local.\n' +
+                'Llista les eines utilitzades per verificar la connectivitat en una xarxa local, segons les tecnologies\n' +
+                'implementat a les xarxes locals.\n' +
+                'Expliqueu les eines de gestió de la xarxa operatives per comprovar l\'estat del dispositiu\n' +
+                'comunicacions, tenint en compte les especificacions tècniques de les eines.\n' +
+                'En un cas pràctic d\'una xarxa local ja instal·lada, verifiqueu les opcions de connexió permeses i prohibides,\n' +
+                'així com l\'accés a recursos compartits, seguint els procediments donats.\n' +
+                'En un cas pràctic d\'una xarxa local ja instal·lada: documentar els processos de prova i verificació realitzats,\n' +
+                'Segons especificacions tècniques.</pre>')
+            const sp = $('<pre> </pre>')
+            const sp1 = $('<pre> </pre>')
+            const sp2 = $('<pre> </pre>')
+            const sp3 = $('<pre> </pre>')
+            const sp4 = $('<pre> </pre>')
+            const sp5 = $('<pre> </pre>')
+            const sp6 = $('<pre> </pre>')
+
+            if (x == 'uf1') {
+                this.echo(uf1);
+            }
+            if (x == 'uf2') {
+                this.echo(uf2);
+            }
+            if (x == 'uf3') {
+                this.echo(uf3);
+            }
+            if (x == 'tree') {
+                this.echo(sp);
+                this.echo(m5);
+                this.echo(sp1);
+                this.echo(uf1);
+                this.echo(sp2);
+                this.echo(uf2);
+                this.echo(sp3);
+                this.echo(uf3);
+            }
+            if (x == null) {
+                this.echo(m5);
+            }
+        },
+        m8: function(x) {
+            const m8 = $('<pre>M8: Aplicacions web\n' +
+                '\n' +
+                'Durada: 198 hores\n' +
+                'Hores de lliure disposició: 33 hores\n' +
+                'UF 1: Ofimàtica i eines web. 22 hores\n' +
+                'UF 2: Gestors d’arxius web. 25 hores\n' +
+                'UF 3: Gestors de continguts. 30 hores\n' +
+                'UF 4: Portals web d’aprenentatge. 30 hores\n' +
+                'UF 5: Fonaments d’HTML i fulls d’estils: 58 hores\n</pre>')
+            const uf1 = $('<pre>UF 1: Eines web i oficimàtiques. 22 hores\n' +
+                '\n' +
+                'Cerca i interpreta l\'origen i l\'evolució de les aplicacions ofimàtiques.\n' +
+                'Estableix la utilitat de les aplicacions d\'oficina web.\n' +
+                'Descriu diferents eines d\'oficina web (processament de textos, full de càlcul, etc.).\n' +
+                'Configurar aplicacions d\'oficina web.\n' +
+                'Gestionar comptes d\'usuari.\n' +
+                'Aplicar criteris de seguretat per a l\'accés dels usuaris.\n' +
+                'Reconeix els beneficis específics de cadascuna de les aplicacions instal·lades.\n' +
+                'Utilitzeu aplicacions de manera col·laborativa.\n' +
+                'Documentar correctament la configuració i gestió de les aplicacions d\'oficina web, i les solucions aportades.</pre>')
+            const uf2 = $('<pre>UF 2: Gestor de fitxers web. 25 hores\n' +
+                '\n' +
+                'Estableix la utilitat d\'un servei de gestió de fitxers web.\n' +
+                'Descriu diferents aplicacions de gestió de fitxers web.\n' +
+                'Instal·la i adapta una eina de gestió de fitxers web.\n' +
+                'Crea i classifica comptes d\'usuari en funció dels seus permisos.\n' +
+                'Gestiona fitxers i directoris.\n' +
+                'Aplica criteris d\'indexació en fitxers i directoris.\n' +
+                'Comprova la seguretat del gestor de fitxers.\n' +
+                'Cerca i interpreta documentació tècnica en les llengües oficials i en les llengües més utilitzades en el sector.\n' +
+                'Documenta adequadament la configuració dels serveis de gestió de fitxers web, els problemes enumerats i les solucions aportades.</pre>')
+            const uf3 = $('<pre>UF 3: Gestor de fitxers web. 25 hores\n' +
+                '\n' +
+                'Identifica els requisits necessaris per instal·lar gestors de continguts.\n' +
+                'Gestiona usuaris amb diferents rols.\n' +
+                'Personalitza la interfície del gestor de continguts.\n' +
+                'Realitza proves de funcionament.\n' +
+                'Realitza tasques d\'actualització del gestor de continguts, especialment tasques de seguretat.\n' +
+                'Instal·la i configura els mòduls i menús necessaris.\n' +
+                'Habilita i configura els mecanismes de seguretat proporcionats pel mateix gestor de continguts.\n' +
+                'Habilita els fòrums i estableix regles d\'accés.\n' +
+                'Realitza proves de funcionament.\n' +
+                'Fa còpies de seguretat del contingut del gestor.\n' +
+                'Cerca i interpreta documentació tècnica en les llengües oficials i en les llengües més utilitzades en el sector.\n' +
+                'Documenta adequadament la instal·lació del gestor de continguts, els problemes enumerats i les solucions aportades.</pre>')
+            const uf4 = $('<pre>UF 4: Gestor de continguts. 30 hores\n' +
+                '\n' +
+                'Identifica els requisits necessaris per instal·lar gestors de continguts.\n' +
+                'Gestionar usuaris amb diferents rols.\n' +
+                'Personalitza la interfície del gestor de continguts.\n' +
+                'Realitzar proves de funcionament.\n' +
+                'Realitza tasques d\'actualització del gestor de continguts, especialment tasques de seguretat.\n' +
+                'Instal·leu i configureu els mòduls i menús necessaris.\n' +
+                'Habilita i configura els mecanismes de seguretat proporcionats pel mateix gestor de continguts.\n' +
+                'Activa els fòrums i estableix regles d\'accés.\n' +
+                'Realitzar proves de funcionament.\n' +
+                'Feu còpies de seguretat del contingut del gestor.\n' +
+                'Busca i interpreta documentació tècnica en les llengües oficials i en les llengües més utilitzades en el sector.\n' +
+                'Documenta adequadament la instal·lació del gestor de continguts, els problemes enumerats i les solucions aportades.</pre>')
+            const uf5 = $('<pre>UF 5: Llocs web educatius. 30 hores\n' +
+                '\n' +
+                'Identifica els requisits necessaris per instal·lar gestors de continguts.\n' +
+                'Gestiona usuaris amb diferents rols.\n' +
+                'Personalitza la interfície del gestor de continguts.\n' +
+                'Realitza proves de funcionament.\n' +
+                'Realitza tasques d\'actualització del gestor de continguts, especialment tasques de seguretat.\n' +
+                'Instal·la i configura els mòduls i menús necessaris.\n' +
+                'Habilita i configura els mecanismes de seguretat proporcionats pel mateix gestor de continguts.\n' +
+                'Habilita els fòrums i estableix regles d\'accés.\n' +
+                'Realitza proves de funcionament.\n' +
+                'Fa còpies de seguretat del contingut del gestor.\n' +
+                'Cerca i interpreta documentació tècnica en les llengües oficials i en les llengües més utilitzades en el sector.\n' +
+                'Documenta adequadament la instal·lació del gestor de continguts, els problemes enumerats i les solucions aportades.</pre>')
+            const uf6 = $('<pre>UF 6: Conceptes bàsics d\'HTML i CSS. 58 hores\n' +
+                '\n' +
+                'Estructura correctament i identifica totes les parts d\'un document HTML.\n' +
+                'Fa un ús adequat dels comentaris per aclarir parts del codi.\n' +
+                'Tabulador bloqueja correctament perquè el codi s\'entengui.\n' +
+                'Realitza el treball en el temps proposat i amb la metodologia establerta.</pre>')
+            const sp = $('<pre> </pre>')
+            const sp1 = $('<pre> </pre>')
+            const sp2 = $('<pre> </pre>')
+            const sp3 = $('<pre> </pre>')
+            const sp4 = $('<pre> </pre>')
+            const sp5 = $('<pre> </pre>')
+            const sp6 = $('<pre> </pre>')
+
+            if (x == 'uf1') {
+                this.echo(uf1);
+            }
+            if (x == 'uf2') {
+                this.echo(uf2);
+            }
+            if (x == 'uf3') {
+                this.echo(uf3);
+            }
+            if (x == 'uf4') {
+                this.echo(uf4);
+            }
+            if (x == 'uf5') {
+                this.echo(uf5);
+            }
+            if (x == 'uf6') {
+                this.echo(uf6);
+            }
+            if (x == 'tree') {
+                this.echo(sp);
+                this.echo(m8);
+                this.echo(sp1);
+                this.echo(uf1);
+                this.echo(sp2);
+                this.echo(uf2);
+                this.echo(sp3);
+                this.echo(uf3);
+                this.echo(sp4);
+                this.echo(uf4);
+                this.echo(sp5);
+                this.echo(uf5);
+                this.echo(sp6);
+                this.echo(uf6);
+            }
+            if (x == null) {
+                this.echo(m8);
+            }
+        },
+        uf1: function() {
+            const test = $ ('<a href="test.html">test</a>')
+            this.echo(test);
+
+        },
+        uf2: function() {
+            const test = $ ('<a href="test.html">test</a>')
+            this.echo(test);
+
+        },
+        uf3: function() {
+            const test = $ ('<a href="test.html">test</a>')
+            this.echo(test);
+
+        },
+        uf4: function() {
+            const test = $ ('<a href="test.html">test</a>')
+            this.echo(test);
+
+        },
+        uf5: function() {
+            const test = $ ('<a href="test.html">test</a>')
+            this.echo(test);
+
+        },
+        uf6: function() {
+            const test = $ ('<a href="test.html">test</a>')
+            this.echo(test);
+
+        },
+        tree: function() {
+            const test = $ ('<a href="test.html">test</a>')
+            this.echo(test);
+
+        },
+        help: function() {
+            const test = $ ('<a href="test.html">test</a>')
+            this.echo(test);
+
+        },
+
+
+
+    }, {
+        checkArity: false,
+        completion: true,
+        greetings: ' __       __   __    ______                             __       \n' +
+            '|  \\     /  \\_/  \\  /      \\                           |  \\      \n' +
+            '| ▓▓\\   /  ▓▓   ▓▓ |  ▓▓▓▓▓▓\\     __   __   __  ______ | ▓▓____  \n' +
+            '| ▓▓▓\\ /  ▓▓▓\\▓▓▓▓  \\▓▓__| ▓▓    |  \\ |  \\ |  \\/      \\| ▓▓    \\ \n' +
+            '| ▓▓▓▓\\  ▓▓▓▓ | ▓▓  /      ▓▓    | ▓▓ | ▓▓ | ▓▓  ▓▓▓▓▓▓\\ ▓▓▓▓▓▓▓\\\n' +
+            '| ▓▓\\▓▓ ▓▓ ▓▓ | ▓▓ |  ▓▓▓▓▓▓     | ▓▓ | ▓▓ | ▓▓ ▓▓    ▓▓ ▓▓  | ▓▓\n' +
+            '| ▓▓ \\▓▓▓| ▓▓_| ▓▓_| ▓▓_____     | ▓▓_/ ▓▓_/ ▓▓ ▓▓▓▓▓▓▓▓ ▓▓__/ ▓▓\n' +
+            '| ▓▓  \\▓ | ▓▓   ▓▓ \\ ▓▓     \\     \\▓▓   ▓▓   ▓▓\\▓▓     \\ ▓▓    ▓▓\n' +
+            ' \\▓▓      \\▓▓\\▓▓▓▓▓▓\\▓▓▓▓▓▓▓▓      \\▓▓▓▓▓\\▓▓▓▓  \\▓▓▓▓▓▓▓\\▓▓▓▓▓▓▓ \n' +
+            '                                                                 \n' +
+            '                                                                 '
+    });
+</script>
+
+</body>
+</html>
+
+

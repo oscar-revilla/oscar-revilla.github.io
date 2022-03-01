@@ -10,11 +10,6 @@
 
 <script>
     $('body').terminal({
-        test: function() {
-            const test = $ ('<a href="test.html">test</a>')
-            this.echo(test);
-
-        },
         video: function(w,h) {
             const img = $('<iframe width=' + w + ' height=' + h + ' src="https://www.youtube.com/embed/VDpCFcUSbWY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>');
             img.on('load', this.resume);
@@ -153,6 +148,7 @@
                 '1.4 Restauració d’imatges. Realització i restauració d’una imatge des de diferents suports de memòria auxiliar.\n' +
                 '1.5 Utilitats per a la creació d’imatges de partició/disc.\n' +
                 '1.6 Realització de documentació del procés i guies d’atenció a l’usuari.\n</pre>')
+            const video = $('<iframe width="560" height="315" src="https://www.youtube.com/embed/5KlCeHYBs7o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>')
             const sp = $('<pre> </pre>')
             const sp1 = $('<pre> </pre>')
             const sp2 = $('<pre> </pre>')
@@ -178,6 +174,9 @@
             }
             if (x == 'uf6') {
                 this.echo(uf6);
+            }
+            if (x == 'video') {
+                this.echo(video);
             }
             if (x == 'tree') {
                 this.echo(sp);
@@ -254,7 +253,8 @@
                 'Identificar processos, estats i sistemes bàsics de planificació.\n' +
                 'Confirma la utilitat dels sistemes transaccionals i les seves repercussions a l\'hora de seleccionar un sistema d\'arxius.</pre>')
             const uf3 = $('<pre></pre>')
-            const sp = $('<pre> </pre>')
+            const video = $('<iframe width="560" height="315" src="https://www.youtube.com/embed/IWxsyaZtotc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>')
+            const sp = $('<pre></pre>')
             const sp1 = $('<pre> </pre>')
             const sp2 = $('<pre> </pre>')
             const sp3 = $('<pre> </pre>')
@@ -273,6 +273,9 @@
             }
             if (x == 'uf3') {
                 this.echo(uf3);
+            }
+            if (x == 'video') {
+                this.echo(video);
             }
             if (x == 'tree') {
                 this.echo(sp);
@@ -353,6 +356,7 @@
                 'Funciona amb imatges en diferents resolucions, segons la seva finalitat.\n' +
                 'Utilitza eines per a l\'edició d\'imatges digitals.\n' +
                 'Importa i exporta imatges en diferents formats</pre>')
+            const video =$('<iframe width="560" height="315" src="https://www.youtube.com/embed/uuEMuyUn1n4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>')
             const sp = $('<pre> </pre>')
             const sp1 = $('<pre> </pre>')
             const sp2 = $('<pre> </pre>')
@@ -378,6 +382,9 @@
             }
             if (x == 'uf6') {
                 this.echo(uf6);
+            }
+            if (x == 'video') {
+                this.echo(video);
             }
             if (x == 'tree') {
                 this.echo(sp);
@@ -599,42 +606,42 @@
             }
         },
         uf1: function() {
-            const test = $ ('<a href="test.html">test</a>')
+            const test = $ ()
             this.echo(test);
 
         },
         uf2: function() {
-            const test = $ ('<a href="test.html">test</a>')
+            const test = $ ()
             this.echo(test);
 
         },
         uf3: function() {
-            const test = $ ('<a href="test.html">test</a>')
+            const test = $ ()
             this.echo(test);
 
         },
         uf4: function() {
-            const test = $ ('<a href="test.html">test</a>')
+            const test = $ ()
             this.echo(test);
 
         },
         uf5: function() {
-            const test = $ ('<a href="test.html">test</a>')
+            const test = $ ()
             this.echo(test);
 
         },
         uf6: function() {
-            const test = $ ('<a href="test.html">test</a>')
+            const test = $ ()
             this.echo(test);
 
         },
         tree: function() {
-            const test = $ ('<a href="test.html">test</a>')
+            const test = $ ('')
             this.echo(test);
 
         },
         help: function() {
-            const test = $ ('<a href="test.html">test</a>')
+            const test = $ ('')
             this.echo(test);
 
         },
@@ -660,4 +667,5 @@
 
 </body>
 </html>
+
 

@@ -10,13 +10,6 @@
 
 <script>
     $('body').terminal({
-        video: function(w,h) {
-            const img = $('<iframe width=' + w + ' height=' + h + ' src="https://www.youtube.com/embed/VDpCFcUSbWY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>');
-            img.on('load', this.resume);
-            this.pause();
-            this.echo(img);
-            this.echo('test');
-        },
         m1: function(x) {
             const m1 = $('<pre>M1: Muntatge i manteniment d’equips\n' +
                 '\n' +
@@ -148,7 +141,7 @@
                 '1.4 Restauració d’imatges. Realització i restauració d’una imatge des de diferents suports de memòria auxiliar.\n' +
                 '1.5 Utilitats per a la creació d’imatges de partició/disc.\n' +
                 '1.6 Realització de documentació del procés i guies d’atenció a l’usuari.\n</pre>')
-            const video = $('<iframe width="560" height="315" src="https://www.youtube.com/embed/5KlCeHYBs7o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>')
+            const video = $('<iframe width="560" height="315" src="https://www.youtube.com/embed/5KlCeHYBs7o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><iframe width="560" height="315" src="https://www.youtube.com/embed/WykzvVyqzkg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>')
             const sp = $('<pre> </pre>')
             const sp1 = $('<pre> </pre>')
             const sp2 = $('<pre> </pre>')
@@ -253,7 +246,7 @@
                 'Identificar processos, estats i sistemes bàsics de planificació.\n' +
                 'Confirma la utilitat dels sistemes transaccionals i les seves repercussions a l\'hora de seleccionar un sistema d\'arxius.</pre>')
             const uf3 = $('<pre></pre>')
-            const video = $('<iframe width="560" height="315" src="https://www.youtube.com/embed/IWxsyaZtotc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>')
+            const video = $('<iframe width="560" height="315" src="https://www.youtube.com/embed/IWxsyaZtotc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><iframe width="560" height="315" src="https://www.youtube.com/embed/mKPrelk4Woo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>')
             const sp = $('<pre></pre>')
             const sp1 = $('<pre> </pre>')
             const sp2 = $('<pre> </pre>')
@@ -356,7 +349,7 @@
                 'Funciona amb imatges en diferents resolucions, segons la seva finalitat.\n' +
                 'Utilitza eines per a l\'edició d\'imatges digitals.\n' +
                 'Importa i exporta imatges en diferents formats</pre>')
-            const video =$('<iframe width="560" height="315" src="https://www.youtube.com/embed/uuEMuyUn1n4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>')
+            const video =$('<iframe width="560" height="315" src="https://www.youtube.com/embed/uuEMuyUn1n4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><iframe width="560" height="315" src="https://www.youtube.com/embed/2S9xIrcelrs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>')
             const sp = $('<pre> </pre>')
             const sp1 = $('<pre> </pre>')
             const sp2 = $('<pre> </pre>')
@@ -448,6 +441,7 @@
                 'així com l\'accés a recursos compartits, seguint els procediments donats.\n' +
                 'En un cas pràctic d\'una xarxa local ja instal·lada: documentar els processos de prova i verificació realitzats,\n' +
                 'Segons especificacions tècniques.</pre>')
+            const video = $('<iframe width="560" height="315" src="https://www.youtube.com/embed/5KlCeHYBs7o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>')
             const sp = $('<pre> </pre>')
             const sp1 = $('<pre> </pre>')
             const sp2 = $('<pre> </pre>')
@@ -559,7 +553,8 @@
                 'Fa un ús adequat dels comentaris per aclarir parts del codi.\n' +
                 'Tabulador bloqueja correctament perquè el codi s\'entengui.\n' +
                 'Realitza el treball en el temps proposat i amb la metodologia establerta.</pre>')
-            const sp = $('<pre> </pre>')
+            const video = $('<iframe width="560" height="315" src="https://www.youtube.com/embed/5KlCeHYBs7o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>')
+            const sp = $('<pre></pre>')
             const sp1 = $('<pre> </pre>')
             const sp2 = $('<pre> </pre>')
             const sp3 = $('<pre> </pre>')
@@ -605,6 +600,371 @@
                 this.echo(m8);
             }
         },
+        m4: function(x) {
+            const m4 = $('<pre>Mòdul professional 4: sistemes operatius en xarxa\n' +
+'Durada: 132 hores\n' +
+'Hores de lliure disposició: no se n’assignen\n' +
+'Unitats formatives que el componen:\n' +
+'UF 1: sistemes operatius propietaris en xarxa. 36 hores\n' +
+'UF 2: sistemes operatius lliures en xarxa. 36 hores\n' +
+'UF 3: compartició de recursos i seguretat. 24 hores</pre>')
+            const uf1 = $('<pre>UF 1: sistemes operatius propietaris en xarxa\n' +
+'Durada: 36 hores\n' +
+'Resultats d’aprenentatge i criteris d’avaluació\n' +
+'1. Instal·la i monitora sistemes operatius en xarxa propietaris, descrivint-ne les característiques i eines\n' +
+'utilitzades.\n' +
+'Criteris d’avaluació\n' +
+'1.1 Realitza l’estudi de compatibilitat del sistema informàtic.\n' +
+'1.2 Planifica i realitza el mètode de partició del disc.\n' +
+'1.3 Selecciona i aplica els sistemes d’arxius i components a instal·lar.\n' +
+'1.4 Instal·la i actualitza el sistema.\n' +
+'1.5 Comprova el funcionament correcte i la connectivitat dels sistemes operatius i programari instal·lats.\n' +
+'1.6 Diferencia els modes d’instal·lació.\n' +
+'1.7 Aplica procediments per l’automatització d’instal·lacions i tasques.\n' +
+'1.8 Interpreta la informació de configuració del sistema operatiu en xarxa.\n' +
+'1.9 Realitza tasques de manteniment del programari instal·lat en el sistema i de configuració de l’entorn.\n' +
+'1.10 Instal·la, configura i descriu les característiques de programes de monitoratge.\n' +
+'1.11 Identifica problemes de rendiment en el sistema a partir de les traces generades pel mateix sistema.\n' +
+'1.12 Documenta adequadament els processos realitzats d’instal·lació i monitoratge, les incidències aparegudes</pre>')
+            const uf2 = $('<pre>UF 2: sistemes operatius lliures en xarxa\n' +
+'Durada: 36 hores\n' +
+'Resultats d’aprenentatge i criteris d’avaluació\n' +
+'1. Instal·la i monitora sistemes operatius en xarxa lliures, descrivint-ne les característiques i eines utilitzades.\n' +
+'Criteris d’avaluació\n' +
+'1.1 Realitza l’estudi de compatibilitat del sistema informàtic.\n' +
+'1.2 Planifica i realitza el mètode de partició del disc.\n' +
+'1.3 Instal·la i actualitza el sistema.\n' +
+'1.4 Comprova el funcionament correcte i la connectivitat dels sistemes operatius i programari instal·lats.\n' +
+'1.5 Diferencia els modes d’instal·lació.\n' +
+'1.6 Aplica procediments per a l’automatització d’instal·lacions i tasques.\n' +
+'1.7 Interpreta la informació de configuració del sistema operatiu en xarxa.\n' +
+'1.8 Realitza tasques de manteniment del programari instal·lat en el sistema i de configuració de l’entorn.\n' +
+'1.9 Instal·la, configura i descriu les característiques de programes de monitoratge.\n' +
+'1.10 Identifica problemes de rendiment en el sistema a partir de les traces generades pel mateix sistema.\n' +
+'1.11 Documenta adequadament els processos realitzats d’instal·lació i monitoratge, les incidències aparegudes\n' +
+'i les solucions aportades.\n' +
+'1.12 Cerca i interpreta documentació tècnica en les llengües oficials i en les de més ús en el sector.</pre>')
+            const uf3 = $('<pre>UF 3: compartició de recursos i seguretat\n' +
+'Durada: 24 hores\n' +
+'Resultats d’aprenentatge i criteris d’avaluació\n' +
+'1. Comparteix recursos en xarxa i gestiona la seguretat, instal·lant programari específic i interpretant la\n' +
+'documentació tècnica.\n' +
+'Criteris d’avaluació\n' +
+'1.1 Reconeix la diferència entre permís i dret.\n' +
+'1.2 Identifica i assigna els recursos del sistema que es compartiran.\n' +
+'1.3 Comparteix impressores en xarxa.\n' +
+'1.4 Utilitza l’entorn gràfic per compartir recursos.\n' +
+'1.5 Estableix nivells de seguretat per controlar l’accés del client als recursos compartits en xarxa.\n' +
+'1.6 Gestiona grups d’usuaris i l’accés als recursos compartits del sistema.\n' +
+'1.7 Comprova el funcionament correcte de les configuracions realitzades.\n' +
+'1.8 Documenta les tasques de gestió de recursos realitzades, les incidències aparegudes i les solucions\n' +
+'aportades.\n' +
+'1.9 Cerca i interpreta documentació tècnica en les llengües oficials i en les de més ús en el sector</pre>')
+            const uf4 = $('<pre></pre>')
+            const uf5 = $('<pre></pre>')
+            const uf6 = $('<pre></pre>')
+            const sp = $('<pre></pre>')
+            const sp1 = $('<pre> </pre>')
+            const sp2 = $('<pre> </pre>')
+            const sp3 = $('<pre> </pre>')
+            const sp4 = $('<pre> </pre>')
+            const sp5 = $('<pre> </pre>')
+            const sp6 = $('<pre> </pre>')
+            const video = $('<iframe width="560" height="315" src="https://www.youtube.com/embed/5KlCeHYBs7o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>')
+
+            if (x == 'uf1') {
+                this.echo(uf1);
+            }
+            if (x == 'uf2') {
+                this.echo(uf2);
+            }
+            if (x == 'uf3') {
+                this.echo(uf3);
+            }
+            if (x == 'uf4') {
+                this.echo(uf4);
+            }
+            if (x == 'uf5') {
+                this.echo(uf5);
+            }
+            if (x == 'uf6') {
+                this.echo(uf6);
+            }
+            if (x == 'tree') {
+                this.echo(sp);
+                this.echo(m4);
+                this.echo(sp1);
+                this.echo(uf1);
+                this.echo(sp2);
+                this.echo(uf2);
+                this.echo(sp3);
+                this.echo(uf3);
+                this.echo(sp4);
+                this.echo(uf4);
+                this.echo(sp5);
+                this.echo(uf5);
+                this.echo(sp6);
+                this.echo(uf6);
+            }
+            if (x == null) {
+                this.echo(m4);
+            }
+        },
+        m6: function(x) {
+            const m6 = $('<pre>Mòdul professional 6: seguretat informàtica\n' +
+'Durada: 132 hores\n' +
+'Hores de lliure disposició: no se n’assignen\n' +
+'Unitats formatives que el componen:\n' +
+'UF 1: seguretat passiva. 24 hores\n' +
+'UF 2: còpies de seguretat. 26 hores\n' +
+'UF 3: legislació de seguretat i protecció de dades. 20 hores\n' +
+'UF 4: seguretat activa. 24 hores\n' +
+'UF 5: tallafocs i monitoratge de xarxes. 38 hores</pre>')
+            const uf1 = $('<pre>UF 1: seguretat passiva\n' +
+'Durada: 24 hores\n' +
+'Resultats d’aprenentatge i criteris d’avaluació\n' +
+'1. Aplica mesures de seguretat passiva en sistemes informàtics descrivint característiques d’entorns i\n' +
+'relacionant-les amb les seves necessitats.\n' +
+'Criteris d’avaluació\n' +
+'1.1 Descriu les diferències entre seguretat física i lògica.\n' +
+'1.2 Defineix les característiques de la ubicació física i condicions ambientals dels equips i servidors.\n' +
+'1.3 Identifica la necessitat de protegir físicament els sistemes informàtics.\n' +
+'1.4 Verifica el funcionament dels sistemes d’alimentació ininterrompuda.\n' +
+'1.5 Selecciona els punts d’aplicació dels sistemes d’alimentació ininterrompuda.\n' +
+'1.6 Esquematitza les característiques d’una política de seguretat basada en llistes de control d’accés detallanthi l’organització d’usuaris i grups per garantir la seguretat de la informació i funcionalitats suportades per\n' +
+'l’equip informàtic, segons les especificacions tècniques.\n' +
+'1.7 Valora els avantatges que suposa la utilització de sistemes biomètrics i la importància d’establir una política\n' +
+'de contrasenyes.\n' +
+'1.8 Identifica els tipus d’accés al sistema així com els mecanismes de seguretat descrivint-ne les</pre>')
+            const uf2 = $('<pre>UF 2: còpies de seguretat\n' +
+'Durada: 26 hores\n' +
+'Resultats d’aprenentatge i criteris d’avaluació\n' +
+'1. Gestiona dispositius d’emmagatzematge descrivint els procediments efectuats i aplicant tècniques per\n' +
+'assegurar la integritat de la informació.\n' +
+'Criteris d’avaluació\n' +
+'1.1 Interpreta la documentació tècnica relativa a la política d’emmagatzematge, fins i tot en cas d’estar editada\n' +
+'en la llengua estrangera d’ús més freqüent en el sector, utilitzant-la d’ajuda.\n' +
+'1.2 Té en compte factors inherents a l’emmagatzematge de la informació (rendiment, disponibilitat,\n' +
+'accessibilitat, entre d’altres), identificant els paràmetres de configuració i els components crítics del sistema.\n' +
+'1.3 Classifica i enumera els principals mètodes d’emmagatzematge, inclosos els sistemes d’emmagatzematge\n' +
+'en xarxa.\n' +
+'1.4 Descriu les tecnologies d’emmagatzematge redundant i distribuït.\n' +
+'1.5 Programa còpies de seguretat tenint en compte la freqüència i l’esquema de rotació.\n' +
+'1.6 Realitza còpies de seguretat amb diferents estratègies.\n' +
+'1.7 Utilitza suports d’emmagatzematge remots i extraïbles.\n' +
+'1.8 Crea i restaura imatges de còpia de seguretat de sistemes en funcionament.\n' +
+'1.9 Identifica la necessitat de custòdia dels suports d’emmagatzematge.</pre>')
+            const uf3 = $('<pre>UF 3: legislació de seguretat i protecció de dades\n' +
+'Durada: 20 hores\n' +
+'Resultats d’aprenentatge i criteris d’avaluació\n' +
+'1. Reconeix la legislació i normativa sobre seguretat i protecció de dades analitzant-ne les repercussions de\n' +
+'l’incompliment.\n' +
+'Criteris d’avaluació\n' +
+'1.1 Descriu la legislació sobre protecció de dades de caràcter personal.\n' +
+'1.2 Determina la necessitat de controlar l’accés a la informació personal emmagatzemada.\n' +
+'1.3 Identifica les figures legals que intervenen en el tractament i manteniment dels fitxers de dades.\n' +
+'1.4 Contrasta l’obligació de posar a disposició de les persones les dades personals que els concerneixen.\n' +
+'1.5 Descriu la legislació actual sobre els serveis de la societat de la informació i comerç electrònic.\n' +
+'1.6 Contrasta les normes sobre gestió de seguretat de la informació, en especial les referents al correu\n' +
+'electrònic.\n' +
+'1.7 Realitza actualitzacions periòdiques dels sistemes per corregir possibles vulnerabilitats.\n' +
+'1.8 Verifica que les llicències d’ús dels components de programari compleixen la legislació vigent.\n' +
+'1.9 Descriu els plans de manteniment i d’administració de seguretat.</pre>')
+            const uf4 = $('<pre>UF 4: seguretat activa\n' +
+'Durada: 24 hores\n' +
+'Resultats d’aprenentatge i criteris d’avaluació\n' +
+'1. Aplica mecanismes de seguretat activa descrivint-ne les característiques i relacionant-les amb les necessitats\n' +
+'d’ús del sistema informàtic.\n' +
+'Criteris d’avaluació\n' +
+'1.1 Segueix plans de contingència per actuar davant fallades de seguretat.\n' +
+'1.2 Identifica els mecanismes de protecció del sistema contra virus i programes maliciosos per assegurar-ne i\n' +
+'verificar-ne l’actualització.\n' +
+'1.3 Verifica l’origen i l’autenticitat de les aplicacions que s’instal·len en els sistemes.\n' +
+'1.4 Instal·la, prova i actualitza aplicacions específiques per a la detecció i eliminació de programari maliciós,\n' +
+'automatitzant tasques de protecció i de desinfecció.\n' +
+'1.5 Aplica tècniques de recuperació de dades.\n' +
+'1.6 Descriu sistemes d’identificació com la signatura electrònica, certificat digital, entre d’altres.\n' +
+'1.7 Obté i utilitza sistemes d’identificació com la signatura electrònica, el certificat digital, entre d’altres, amb\n' +
+'la finalitat bàsica de la signatura de documents i de missatgeria electrònica, seguint la documentació que\n' +
+'descriu els procediments.\n' +
+'1.8 Interpreta la documentació tècnica associada, fins i tot en cas d’estar editada en la llengua estrangera d’ús\n' +
+'més freqüent en el sector, i utilitzant-la d’ajuda.\n' +
+'1.9 Detecta i resol les alarmes i les incidències de seguretat seguint les instruccions pertinents.\n' +
+'1.10 Realitza la documentació adient sobre les incidències de seguretat, segons indicacions de l’administrador.</pre>')
+            const uf5 = $('<pre>UF 5: tallafocs i monitoratge de xarxes\n' +
+'Durada: 38 hores\n' +
+'Resultats d’aprenentatge i criteris d’avaluació\n' +
+'1. Assegura la privadesa de la informació transmesa en xarxes informàtiques descrivint vulnerabilitats i\n' +
+'instal·lant programari específic.\n' +
+'Criteris d’avaluació\n' +
+'1.1 Identifica la necessitat d’inventariar i controlar els serveis de xarxa.\n' +
+'1.2 Contrasta la incidència de les tècniques d’enginyeria social en els fraus informàtics i robatoris d’informació.\n' +
+'1.3 Dedueix la importància de minimitzar el volum de trànsit generat per la publicitat i el correu brossa.\n' +
+'1.4 Aplica mesures per evitar el monitoratge de xarxes cablejades.\n' +
+'1.5 Classifica i valora les propietats de seguretat dels protocols usats en xarxes sense fil.\n' +
+'1.6 Utilitza eines de control del monitoratge de xarxes.\n' +
+'1.7 Instal·la i configura un tallafocs en un equip o servidor, seguint la documentació tècnica associada.\n' +
+'1.8 Interpreta la documentació tècnica associada, fins i tot en cas d’estar editada en la llengua estrangera d’ús\n' +
+'més freqüent en el sector, utilitzant-la d’ajuda.\n' +
+'1.9 Realitza informes d’incidències de seguretat detallant les activitats realitzades.</pre>')
+            const uf6 = $('<pre></pre>')
+            const sp = $('<pre> </pre>')
+            const sp1 = $('<pre> </pre>')
+            const sp2 = $('<pre> </pre>')
+            const sp3 = $('<pre> </pre>')
+            const sp4 = $('<pre> </pre>')
+            const sp5 = $('<pre> </pre>')
+            const sp6 = $('<pre> </pre>')
+            const video = $('<iframe width="560" height="315" src="https://www.youtube.com/embed/5KlCeHYBs7o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>')
+            if (x == 'uf1') {
+                this.echo(uf1);
+            }
+            if (x == 'uf2') {
+                this.echo(uf2);
+            }
+            if (x == 'uf3') {
+                this.echo(uf3);
+            }
+            if (x == 'uf4') {
+                this.echo(uf4);
+            }
+            if (x == 'uf5') {
+                this.echo(uf5);
+            }
+            if (x == 'uf6') {
+                this.echo(uf6);
+            }
+            if (x == 'tree') {
+                this.echo(sp);
+                this.echo(m6);
+                this.echo(sp1);
+                this.echo(uf1);
+                this.echo(sp2);
+                this.echo(uf2);
+                this.echo(sp3);
+                this.echo(uf3);
+                this.echo(sp4);
+                this.echo(uf4);
+                this.echo(sp5);
+                this.echo(uf5);
+                this.echo(sp6);
+                this.echo(uf6);
+            }
+            if (x == null) {
+                this.echo(m6);
+            }
+        },
+        m7: function(x) {
+            const m7 = $('<pre>Mòdul professional 7: serveis de xarxa\n' +
+'Durada: 165\n' +
+'Hores de lliure disposició: 33 hores\n' +
+'Unitats formatives que el componen:\n' +
+'UF 1: configuració de la xarxa (DNS i DHCP). 36 hores\n' +
+'UF 2: correu electrònic i transmissió d’arxius. 32 hores\n' +
+'UF 3: servidor web i servidor intermediari (proxy). 32 hores\n' +
+'UF 4: accés a sistemes remots. 32 hores</pre>')
+            const uf1 = $('<pre>UF 1: configuració de la xarxa (DNS i DHCP)\n' +
+'Durada: 36 hores\n' +
+'Resultats d’aprenentatge i criteris d’avaluació\n' +
+'1. Instal·la serveis de configuració dinàmica, descrivint-ne les característiques i aplicacions.\n' +
+'Criteris d’avaluació\n' +
+'1.1 Reconeix el funcionament dels mecanismes automatitzats de configuració dels paràmetres de xarxa.\n' +
+'1.2 Identifica els avantatges que proporcionen.\n' +
+'1.3 Il·lustra els procediments i pautes que intervenen en una sol·licitud de configuració dels paràmetres de\n' +
+'xarxa.\n' +
+'1.4 Instal·la un servei de configuració dinàmica dels paràmetres de xarxa.\n' +
+'1.5 Presenta el servei per assignar la configuració bàsica als sistemes d’una xarxa local.\n' +
+'1.6 Realitza assignacions dinàmiques i estàtiques.\n' +
+'1.7 Reconeix les diferents topologies de xarxa.\n' +
+'1.8 Verifica l’assignació correcta dels paràmetres.\n' +
+'1.9 Realitza la documentació adient per donar suport a l’usuari.</pre>')
+            const uf2 = $('<pre>UF 2: correu electrònic i transmissió d’arxius\n' +
+'Durada: 32 hores\n' +
+'1. Instal·la serveis de transferència de fitxers, descrivint-ne les característiques i aplicacions.\n' +
+'Criteris d’avaluació\n' +
+'1.1 Estableix la utilitat i el mode d’operació del servei de transferència de fitxers.\n' +
+'1.2 Instal·la un servei de transferència de fitxers.\n' +
+'1.3 Crea usuaris i grups per a accés remot al servidor.\n' +
+'1.4 Configura l’accés anònim.\n' +
+'1.5 Estableix límits en les diferents maneres d’accés.\n' +
+'1.6 Comprova l’accés al servidor, tant en mode actiu com en mode passiu.\n' +
+'1.7 Realitza proves amb clients en línia de comandaments i en mode gràfic.\n' +
+'1.8 Realitza la documentació adient per donar suport a l’usuari.</pre>')
+            const uf3 = $('<pre>UF 3: Servidor web i servidor intermediari (proxy)\n' +
+'Durada: 32 hores\n' +
+'Resultats d’aprenentatge i criteris d’avaluació\n' +
+'1. Gestiona servidors web identificant-ne requeriments d’utilització i aplicant-hi criteris de configuració.\n' +
+'Criteris d’avaluació\n' +
+'1.1 Descriu els fonaments i protocols en què es basa el funcionament d’un servidor web.\n' +
+'1.2 Instal·la un servidor web.\n' +
+'1.3 Crea llocs virtuals.\n' +
+'1.4 Verifica les possibilitats existents per discriminar el lloc de destinació del trànsit entrant al servidor.\n' +
+'1.5 Configura la seguretat del servidor.\n' +
+'1.6 Comprova l’accés dels usuaris al servidor.\n' +
+'1.7 Diferencia i prova l’execució de codi al servidor i en el client.\n' +
+'1.8 Instal·la mòduls sobre el servidor.\n' +
+'1.9 Estableix mecanismes per assegurar les comunicacions entre el client i el servidor.\n' +
+'1.10 Realitza la documentació adient per donar suport a l’usuari.</pre>')
+            const uf4 = $('<pre>UF 4: accés a sistemes remots\n' +
+'Durada: 32 hores\n' +
+'Resultats d’aprenentatge i criteris d’avaluació\n' +
+'1. Gestiona mètodes d’accés remot descrivint-ne les característiques i instal·lant-hi els serveis corresponents.\n' +
+'Criteris d’avaluació\n' +
+'1.1 Descriu mètodes d’accés i administració remota de sistemes.\n' +
+'1.2 Instal·la un servei d’accés remot en línia de comandaments.\n' +
+'1.3 Instal·la un servei d’accés remot en mode gràfic.\n' +
+'1.4 Comprova el funcionament d’ambdós mètodes.\n' +
+'1.5 Identifica els principals avantatges i deficiències de cadascun.\n' +
+'1.6 Realitza proves d’accés remot entre sistemes de diferent naturalesa.\n' +
+'1.7 Realitza proves d’administració remota entre sistemes de diferent naturalesa.</pre>')
+            const uf5 = $('<pre></pre>')
+            const uf6 = $('<pre></pre>')
+            const sp = $('<pre> </pre>')
+            const sp1 = $('<pre> </pre>')
+            const sp2 = $('<pre> </pre>')
+            const sp3 = $('<pre> </pre>')
+            const sp4 = $('<pre> </pre>')
+            const sp5 = $('<pre> </pre>')
+            const sp6 = $('<pre> </pre>')
+            const video = $('<iframe width="560" height="315" src="https://www.youtube.com/embed/5KlCeHYBs7o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>')
+            if (x == 'uf1') {
+                this.echo(uf1);
+            }
+            if (x == 'uf2') {
+                this.echo(uf2);
+            }
+            if (x == 'uf3') {
+                this.echo(uf3);
+            }
+            if (x == 'uf4') {
+                this.echo(uf4);
+            }
+            if (x == 'uf5') {
+                this.echo(uf5);
+            }
+            if (x == 'uf6') {
+                this.echo(uf6);
+            }
+            if (x == 'tree') {
+                this.echo(sp);
+                this.echo(m7);
+                this.echo(sp1);
+                this.echo(uf1);
+                this.echo(sp2);
+                this.echo(uf2);
+                this.echo(sp3);
+                this.echo(uf3);
+                this.echo(sp4);
+                this.echo(uf4);
+                this.echo(sp5);
+                this.echo(uf5);
+                this.echo(sp6);
+                this.echo(uf6);
+            }
+            if (x == null) {
+                this.echo(m7);
+            }
+        },
         uf1: function() {
             const test = $ ()
             this.echo(test);
@@ -630,12 +990,32 @@
             this.echo(test);
 
         },
+        uf8: function() {
+            const test = $ ()
+            this.echo(test);
+
+        },
         uf6: function() {
             const test = $ ()
             this.echo(test);
 
         },
+        uf4: function() {
+            const test = $ ()
+            this.echo(test);
+
+        },
+        uf7: function() {
+            const test = $ ()
+            this.echo(test);
+
+        },
         tree: function() {
+            const test = $ ('')
+            this.echo(test);
+
+        },
+        video: function() {
             const test = $ ('')
             this.echo(test);
 
@@ -667,5 +1047,4 @@
 
 </body>
 </html>
-
 
